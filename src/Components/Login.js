@@ -15,7 +15,7 @@ const Login = () => {
     }, [])
 
     const handleLogin = async () => {
-        let result = await fetch("http://localhost:7000/login", {
+        let result = await fetch("https://kfcclone220.herokuapp.com/login", {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {

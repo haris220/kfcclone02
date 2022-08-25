@@ -30,7 +30,7 @@ const SharingParems = () => {
 
 const getUsers =  () =>{
 
-fetch('http://localhost:7000/all-products')
+fetch('https://kfcclone220.herokuapp.com/all-products')
 .then((res)=>{if(res.ok){
 return res.json();
 }else{console.log("res error");}})

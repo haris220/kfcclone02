@@ -49,7 +49,7 @@ const CheckOut = () => {
       
   
 
-      let result = await fetch('http://localhost:7000/ordersreceived',{
+      let result = await fetch('https://kfcclone220.herokuapp.com/ordersreceived',{
           method: 'post',
           body: JSON.stringify({Fname, Lname , Email, Number ,Address, City,  Zcode, Status, OrderdPrice, OrderdItems }),
           headers: { 
