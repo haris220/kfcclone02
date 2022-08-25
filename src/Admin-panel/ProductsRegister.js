@@ -24,7 +24,7 @@ const ProductsRegister = () => {
         //
     
 
-        let result = await fetch('http://localhost:7000/registerproducts',{
+        let result = await fetch('https://kfcclone220.herokuapp.com/registerproducts',{
             method: 'post',
             body: JSON.stringify({Name, Description, Id, Price,Cart}),
             headers: {

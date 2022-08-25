@@ -22,7 +22,7 @@ const Register = () => {
         //
     
 
-        let result = await fetch('http://localhost:7000/register-user',{
+        let result = await fetch('https://kfcclone220.herokuapp.com/register-user',{
             method: 'post',
             body: JSON.stringify({Name, Email, Password,Cart}),
             headers: {

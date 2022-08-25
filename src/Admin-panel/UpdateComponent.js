@@ -23,7 +23,7 @@ const UpdateProduct = () => {
   
       const getUsers =  () =>{
   
-           fetch('http://localhost:7000/all-products')
+           fetch('https://kfcclone220.herokuapp.com/all-products')
            .then((res)=>{if(res.ok){
             return res.json();
            }else{console.log("res error");}})
@@ -49,7 +49,7 @@ const UpdateProduct = () => {
 
     const getProductDetails = async () => {
         console.warn(params)
-        let result = await fetch(`http://localhost:7000/all-products/${params.id}`);
+        let result = await fetch(`https://kfcclone220.herokuapp.com/all-products/${params.id}`);
         result = await result.json();
         setName(result.Name);
         setPrice(result.Price);
@@ -59,7 +59,7 @@ const UpdateProduct = () => {
 
     const updateProduct = async () => {
         console.warn(Name, Price)
-         let result = await fetch(`http://localhost:7000/all-products/${params.id}`, {
+         let result = await fetch(`https://kfcclone220.herokuapp.com/all-products/${params.id}`, {
             method: 'Put',
             body: JSON.stringify({ Name, Price }),
             headers: {

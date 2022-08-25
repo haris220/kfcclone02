@@ -15,7 +15,7 @@ const ViewProducts = () => {
 
     const getUsers = async () =>{
 
-        let result = await fetch('http://localhost:7000/all-products');
+        let result = await fetch('https://kfcclone220.herokuapp.com/all-products');
         result = await result.json();
 
         if(result){
@@ -42,7 +42,7 @@ const ViewProducts = () => {
     
        
      const delproducts = async (id) =>{
-      let result = await fetch(`http://localhost:7000/all-products/${id}`,{
+      let result = await fetch(`https://kfcclone220.herokuapp.com/all-products/${id}`,{
        method:"Delete"
       });
       result = await result.json()
