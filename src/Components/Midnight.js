@@ -33,7 +33,7 @@ const Midnight = () => {
 
     const getUsers = async () =>{
 
-        let result = await fetch('https://kfcclone220.herokuapp.com/all-productss');
+        let result = await fetch('https://kfcclone220.herokuapp.com/all-products');
         result = await result.json();
 
         if(result){

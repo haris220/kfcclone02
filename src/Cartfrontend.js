@@ -52,22 +52,22 @@ const Cart = () => {
                 cart.cartItems.map((cartItem) => (
                         
                             <tr key={cartItem._id}>
-                                
+                                <th scope="row">
                                 <td><img style={{width : '15rem'}} src={cartItem.source} className="card-img-top" alt="..." />{cartItem.Name} ({cartItem.ItemQty}){cartItem.AddOnQty > 0 && <span> + Add On : PC Chicken ({cartItem.AddOnQty})</span>}</td>
                                 <td style={{paddingTop : '70px'}}>{cartItem.ItemQty} { cartItem.AddOnQty > 0 && <span> + {cartItem.AddOnQty}</span>}</td>
                                 <td style={{paddingTop : '70px'}}>PKR : {cartItem.Price *  cartItem.ItemQty } {cartItem.AddOnQty > 0 && <span> + {cartItem.AddOnQty * 210}</span>}  </td>
                                
                                 <td style={{paddingTop : '70px'}}>{cartItem.ItemPrice}</td>  
                                 <button style={{textColor: 'red'}} className="btn btn-outline-danger" onClick={() => handleRemoveCart(cartItem)}>X</button>
-                            </tr>
+                                </th></tr>
                             
                         
                 ))
             }
             </tbody>
     </table>
-    <h1>Your Total Bill Will be {cart.cartTotalAmount}</h1>
-    <h1>Total Number of Products {cart.cartTotalQuantity}</h1>
+    <h1 className='col justify-content-center  d-flex'> Total Bill : PKR {cart.cartTotalAmount}</h1>
+   
      <div className='col justify-content-center  d-flex' style={{marginBottom : '50px'}}>  
   <Link to={'/checkout'}>  <button style={{border: "none" ,backgroundColor: '#000000', /* Green */
   border: 'none',

@@ -32,6 +32,7 @@ import UpdateProduct    from './Admin-panel/UpdateComponent' ;
 import Store from './AddProdToCart';
 import Cart from './Cartfrontend';
 import CheckOut from './CheckOut';
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -42,6 +43,7 @@ const App = () => {
   return (
     <>
      <BrowserRouter>
+     <ScrollToTop />
        <Header/>
        <Routes>
 
