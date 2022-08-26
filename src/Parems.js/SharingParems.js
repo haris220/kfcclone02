@@ -20,7 +20,7 @@ const SharingParems = () => {
 
   const dispatch = useDispatch();
   const cartnine = useSelector((state) => state.cart);
-  console.log(cartnine);
+ 
 
   //for loading the Product on page
   const [user, setUser] = useState([]); 
@@ -94,8 +94,7 @@ const {id} = useParams()
       product.AddOnPrice = 210 * product0[0].qty;
      
         
-        console.log(product)
-   
+        
 
       dispatch(addToCart(product));
       navigate("/addprodtocartdisplayed")
@@ -108,8 +107,7 @@ const {id} = useParams()
 let price = Data.Price
 const addedItemPriceAndAddon = price * product1.Qty + data[0].Price * product0[0].qty 
 const addedItemPrice = price * product1.Qty 
-console.log(addedItemPrice)
-console.log(price)
+
 
  
 

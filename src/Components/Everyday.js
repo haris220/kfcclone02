@@ -53,7 +53,7 @@ const EveryDay = () => {
     function OnlySignature(user){
       return user.Cart === 'EVERYDAY'
      }
-    console.log(filteredmf)
+    
   return (
     <>
     

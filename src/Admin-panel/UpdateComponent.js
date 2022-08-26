@@ -78,6 +78,7 @@ const UpdateProduct = () => {
         <div className='container'>
             <SecondNavbar/>
         <div className='col justify-content-center  d-flex' style={{marginBottom : '50px'}}>   <h1>PRODUCT PREVIOUS DETAILS</h1> </div>
+        <div className='col justify-content-center  d-flex'   > <h3>Fill Both Fields</h3> </div>
         <div className="col justify-content-center  d-flex col-sm-6 col-md-4 col-lg-3 g-3">
         <div className="card col justify-content-center  d-flex" style={{width: '17rem', marginLeft: '0px'}}>
   

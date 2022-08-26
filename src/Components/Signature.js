@@ -53,7 +53,7 @@ const Signature = () => {
      function OnlySignature(user){
       return user.Cart === 'SIGNATURE'
      }
-    console.log(filteredmf)
+    
   return (
     <>
     

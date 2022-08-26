@@ -15,8 +15,7 @@ const SignUp = () => {
             navigate('/registration')
         }
     }, [])
-    if((password.length < 4)){
-    console.log('less')}
+    
 
     const collectData = async (event) => {
         event.preventDefault();
@@ -34,7 +33,7 @@ const SignUp = () => {
 
 
 
-        console.warn(name, email, password);
+        
         let result = await fetch("https://kfcclone220.herokuapp.com/register", {
             method: 'post',
             body: JSON.stringify({ name, email, password, Cart }),
@@ -44,7 +43,7 @@ const SignUp = () => {
         });
         result = await result.json();
         
-        console.warn(result);
+        
         localStorage.setItem("user", JSON.stringify(result.result))
         localStorage.setItem("token", JSON.stringify(result.auth))
 

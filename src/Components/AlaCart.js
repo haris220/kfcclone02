@@ -60,11 +60,11 @@ const AlaCart = () => {
      function OnlySignature(user){
       return user.Cart === 'ALACART'
      }
-    console.log(filteredmf);
+   
     
     //let Data = filteredmf.find(p => p.Id === 2);
     //console.log(Data)
-    console.log()
+   
     
 
  

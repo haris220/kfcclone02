@@ -39,8 +39,7 @@ const Store = () => {
     .catch((err) => console.log(err));}
     const product = user
     const cart = useSelector((state) => state.cart);
-    console.log(cart)
-  
+ 
 
 
   return (

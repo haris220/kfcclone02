@@ -31,7 +31,7 @@ const Register = () => {
         })
 
         result = await result.json();
-        console.log(result);
+        
        
 
         localStorage.setItem('user', JSON.stringify(result));

@@ -53,7 +53,7 @@ const Sharing = () => {
      function OnlySignature(user){
       return user.Cart === 'SHARING'
      }
-    console.log(filteredmf)
+    
   return (
     <>
     

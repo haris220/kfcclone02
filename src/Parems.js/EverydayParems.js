@@ -18,7 +18,7 @@ const Everydayparems = () => {
 
   const dispatch = useDispatch();
   const cartnine = useSelector((state) => state.cart);
-  console.log(cartnine);
+  
 
   //for loading the Product on page
   const [user, setUser] = useState([]); 
@@ -34,7 +34,7 @@ return res.json();
 }else{console.log("res error");}})
 .then((paremproduct)=>{
 const filteredparemproduct = paremproduct.find((item)=>item.Id ===  parseInt(id));
-//console.log(newUser);
+
 setUser(filteredparemproduct)
 })
 .catch((err) => console.log(err));}
@@ -92,7 +92,7 @@ const {id} = useParams()
       product.AddOnPrice = 210 * product0[0].qty;
      
         
-        console.log(product)
+       
    
 
       dispatch(addToCart(product));
@@ -106,8 +106,7 @@ const {id} = useParams()
 let price = Data.Price
 const addedItemPriceAndAddon = price * product1.Qty + data[0].Price * product0[0].qty 
 const addedItemPrice = price * product1.Qty 
-console.log(addedItemPrice)
-console.log(price)
+
 
  
 

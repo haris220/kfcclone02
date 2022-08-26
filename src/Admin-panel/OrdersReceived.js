@@ -23,11 +23,11 @@ const OrdersReceived = () => {
   };
     function changeStatus(id){
      let duplicateArray = [...meow] 
-     console.log(duplicateArray)
+    
      let index= meow.findIndex(meow=> meow._id===id);
     duplicateArray[index] = {...meow[index], Status: "Delieverd"} 
     setmeow(duplicateArray);
-     console.log(meow)
+     
     }
     
    

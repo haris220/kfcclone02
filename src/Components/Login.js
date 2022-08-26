@@ -23,7 +23,7 @@ const Login = () => {
             }
         });
         result = await result.json();
-        console.warn(result)
+        
         if (result.auth) {
             localStorage.setItem('user', JSON.stringify(result.user));
             localStorage.setItem('token', JSON.stringify(result.auth));

@@ -15,7 +15,7 @@ const Cart = () => {
 }, [cart, dispatch ]);
  // const handleAddToCart = (product) => {
   //  dispatch(cartActions.addToCart(product));
-  console.log(cart)
+  
 //  let sum = 0
 //  for(let i = 0; i < cart.cartItems.length; i++){
  //   sum  += cart.cartItems[i].ItemPrice
@@ -52,14 +52,14 @@ const Cart = () => {
                 cart.cartItems.map((cartItem) => (
                         
                             <tr key={cartItem._id}>
-                                <th scope="row">
+                                
                                 <td><img style={{width : '15rem'}} src={cartItem.source} className="card-img-top" alt="..." />{cartItem.Name} ({cartItem.ItemQty}){cartItem.AddOnQty > 0 && <span> + Add On : PC Chicken ({cartItem.AddOnQty})</span>}</td>
                                 <td style={{paddingTop : '70px'}}>{cartItem.ItemQty} { cartItem.AddOnQty > 0 && <span> + {cartItem.AddOnQty}</span>}</td>
                                 <td style={{paddingTop : '70px'}}>PKR : {cartItem.Price *  cartItem.ItemQty } {cartItem.AddOnQty > 0 && <span> + {cartItem.AddOnQty * 210}</span>}  </td>
                                
                                 <td style={{paddingTop : '70px'}}>{cartItem.ItemPrice}</td>  
                                 <button style={{textColor: 'red'}} className="btn btn-outline-danger" onClick={() => handleRemoveCart(cartItem)}>X</button>
-                                </th></tr>
+                                </tr>
                             
                         
                 ))

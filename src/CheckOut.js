@@ -23,7 +23,7 @@ const CheckOut = () => {
     let meow = JSON.parse(localStorage.getItem("cartItems"))
     let OrderdItems = meow
     let OrderdPrice = JSON.parse(cart.cartTotalAmount);
-    console.log(OrderdItems)
+    
     
     
     const [error, setError ] = useState(false)
@@ -36,7 +36,7 @@ const CheckOut = () => {
 
       if (!Lname || !Fname || !Email || !Number || !Address || !Zcode  || Number.length < 10 || Number.length > 13 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(Email)){
          
- console.log('error function activated')
+ 
  
         setError(true);
         return false;
@@ -45,7 +45,7 @@ const CheckOut = () => {
  
        }
        
-       console.log(Number);
+       
       
   
 
@@ -58,16 +58,15 @@ const CheckOut = () => {
       });
 
       result = await result.json();
-      console.log(result);
+      
       localStorage.removeItem('cartItems');
       localStorage.removeItem('cartAmount');
       
    //  dispatch(cleareverything());
         alert("Your Order Has Been Placed, Thank-You")
-       navigate('/ala-carte-and-combos')
+       navigate('/')
        window.location.reload(false);
   }
- console.log(cart)
  
  
  

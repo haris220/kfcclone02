@@ -33,7 +33,7 @@ const ProductsRegister = () => {
         })
 
         result = await result.json();
-        console.log(result);
+        
         navigate('/registration/admin-panel/products-detail');
 
         // if(result){
