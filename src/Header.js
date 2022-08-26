@@ -11,7 +11,7 @@ const Header = () => {
            <div className='col-sm-2  justify-content-start  d-flex'>  
           <img src="./images/kfc.png" width="150px" height="100px"  /></div>
      <div className="col-md-4 col-sm-4  justify-content-end d-flex " >
-         <span>To Access Admin-Panel Click On Sign In</span>s
+         <span>To Access Admin-Panel Click Sign-In</span>
             <Link className="nav-link active link-dark" href="#" style={{fontWeight : '700'}} to="registration" >SIGN IN</Link>
      </div>
     </div>
